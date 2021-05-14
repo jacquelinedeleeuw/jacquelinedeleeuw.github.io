@@ -1,0 +1,120 @@
+@import "~bulma/bulma.sass";
+
+body {
+  font-family: "Inconsolata", monospace;
+  color: #0d1e2d;
+}
+
+.font-heading {
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  color: #777;
+  text-decoration: none;
+  a:hover,
+  b:hover {
+    color: #000;
+  }
+}
+
+.navbar-end a:hover {
+  color: gray;
+}
+
+a {
+  color: black;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.item .item-wrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .item-wrap:after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.item .item-wrap img {
+  transition: 0.3s transform ease;
+  transform: scale(1);
+}
+
+.item .item-wrap:hover {
+  text-decoration: none;
+}
+
+.item .item-wrap:hover img {
+  transform: scale(1.05);
+}
+
+.item .item-wrap:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item .item-wrap > .detail-info {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  transform: translateY(-50%);
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 20px;
+  transition: 0.3s all ease;
+}
+
+.item .item-wrap > .detail-info h3 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.item .item-wrap > .detail-info a {
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.item .item-wrap > .detail-info a:hover {
+  color: gray;
+}
+
+.item .item-wrap:hover {
+  text-decoration: none;
+}
+
+.item .item-wrap:hover img {
+  transform: scale(1.05);
+}
+
+.item .item-wrap:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.item .item-wrap:hover .detail-info {
+  margin-top: 0px;
+  opacity: 1;
+  visibility: visible;
+}
