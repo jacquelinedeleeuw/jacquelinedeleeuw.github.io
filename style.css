@@ -1,41 +1,67 @@
-@import "~bulma/bulma.sass";
-
 body {
   font-family: "Inconsolata", monospace;
   color: #0d1e2d;
 }
 
-.font-heading {
-  font-family: "Raleway", sans-serif;
-}
-
-.navbar-brand {
-  font-size: 1.7rem;
-  color: #777;
-  text-decoration: none;
-  a:hover,
-  b:hover {
-    color: #000;
-  }
-}
-
-.navbar-end a:hover {
-  color: gray;
-}
-
 a {
-  color: black;
+  color: rgb(141, 141, 141);
+  text-decoration: none;
 }
 
-h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+a:hover {
+  color: #000;
+}
+
+.navbar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin-top: 30px;
+  margin-left: 10vw;
+}
+
+.navbar-about {
+  margin-right: 30px;
+}
+
+.navbar .navbar-brand,
+.navbar .navbar-about {
+  font-size: 1.7rem;
+}
+
+.about-section {
+  padding: 7rem;
+}
+
+.about-columns {
+  display: flex;
+}
+
+.about-column {
+  margin-right: 20px;
+}
+
+.about-column img {
+  margin-top: 16px;
+}
+
+.item {
+  border: none;
+  margin-left: 10vw;
+  max-width: 80vw;
+  display: flex;
 }
 
 .item .item-wrap {
   display: block;
   position: relative;
   overflow: hidden;
+  max-width: 40vw;
+  max-height: 80vh;
+  margin: 20px;
 }
 
 .item .item-wrap:after {
@@ -57,17 +83,9 @@ h2 {
   transform: scale(1);
 }
 
-.item .item-wrap:hover {
-  text-decoration: none;
-}
-
-.item .item-wrap:hover img {
-  transform: scale(1.05);
-}
-
-.item .item-wrap:hover:after {
-  opacity: 1;
-  visibility: visible;
+.portfolio-image img {
+  max-width: 40vw;
+  object-fit: contain;
 }
 
 .item .item-wrap > .detail-info {
@@ -86,18 +104,13 @@ h2 {
 
 .item .item-wrap > .detail-info h3 {
   font-size: 40px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .item .item-wrap > .detail-info a {
-  font-size: 15px;
-  color: white;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-}
-
-.item .item-wrap > .detail-info a:hover {
-  color: gray;
 }
 
 .item .item-wrap:hover {
