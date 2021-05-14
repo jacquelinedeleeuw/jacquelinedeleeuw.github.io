@@ -30,6 +30,7 @@ a:hover {
 .navbar .navbar-brand,
 .navbar .navbar-about {
   font-size: 1.7rem;
+  padding-left: 20px;
 }
 
 .about-section {
@@ -62,6 +63,8 @@ a:hover {
   max-width: 40vw;
   max-height: 80vh;
   margin: 20px;
+  border-radius: 2%;
+  border: 1px solid rgb(231, 230, 230);
 }
 
 .item .item-wrap:after {
