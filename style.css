@@ -108,6 +108,7 @@ a:hover {
 }
 
 .item .item-wrap > .detail-info a {
+  color: white;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
