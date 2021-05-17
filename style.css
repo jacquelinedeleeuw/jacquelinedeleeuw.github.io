@@ -1,11 +1,11 @@
 body {
   font-family: "Montserrat", sans-serif;
-  color: rgb(92, 92, 92);
+  color: rgb(68, 68, 68);
   background-color: white;
 }
 
 a {
-  color: rgb(92, 92, 92);
+  color: rgb(68, 68, 68);
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ a:hover {
   margin-left: 50px;
   padding: 10px 30px;
   background-color: #dbf0fd;
-  color: rgb(92, 92, 92);
+  color: rgb(68, 68, 68);
 }
 
 .about-interests {
@@ -108,6 +108,7 @@ a:hover {
 
 .skills p {
   font-size: 15px;
+  font-weight: bold;
   font-family: "Montserrat", sans-serif;
 }
 .skills i {
