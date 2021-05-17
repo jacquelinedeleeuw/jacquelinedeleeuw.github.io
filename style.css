@@ -214,7 +214,6 @@ a:hover {
 .slides::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  background: lightgray;
 }
 .slides::-webkit-scrollbar-thumb {
   background: lightgray;
@@ -295,9 +294,6 @@ a:hover {
     margin: 10px;
     min-width: 100px;
   }
-  a.dots {
-    display: none;
-  }
   .item .item-wrap {
     margin: 15px 0px;
   }
@@ -321,7 +317,6 @@ a:hover {
   }
   .item .item-wrap > .detail-info p {
     font-size: 65%;
-    /* padding: 10px; */
     margin: 0;
   }
   .about-column .about-text {
