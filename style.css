@@ -282,7 +282,7 @@ a:hover {
   .about-contact a {
     padding: 0 10px;
     flex-direction: row;
-    font-size: 80%;
+    font-size: 65%;
   }
   .about-section,
   .portfolio-section {
