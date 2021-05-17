@@ -65,9 +65,23 @@ a:hover {
 }
 
 .about-interests {
-  /* background-color: #dbf0fd; */
   padding-bottom: 10px;
   margin-top: 20px;
+  display: flex;
+}
+
+.about-interests .interest {
+  display: flex;
+  align-items: center;
+}
+
+.about-interests .interest > i {
+  padding: 20px;
+  min-width: 25px;
+}
+
+.about-interests .interest > p {
+  margin: 10px;
 }
 
 .about-column img {
@@ -291,6 +305,9 @@ a:hover {
   }
   .about-column .about-text {
     margin-left: 0;
+  }
+  .about-interests {
+    display: block;
   }
   .skills {
     flex-wrap: wrap;
