@@ -5,55 +5,85 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Jacqueline</title>
-  <link href="https://fonts.googleapis.com/css?family=https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/565fa4a832.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
   <nav class="navbar">
-      <a class="navbar-brand" href="index.html">My Portfolio.</a>
+      <a class="navbar-brand" href="#portfolio">My Portfolio.</a>
       <a class="navbar-about" href="about.html">About Me.</a>
   </nav>
 
   <main>
-    <section class="portfolio">
-      <div class="section">
-        <div class="item">
-          <div class="item-wrap">
-            <div class="detail-info">
-              <h3>Yieldly</h3>
-              <div><a href="https://yieldly.herokuapp.com/" rel="noreferrer" target="_blank" >Deployed project</a></div>
-              <div><a href="https://github.com/jacquelinedeleeuw/sei-project-four" rel="noreferrer" target="_blank" >GitHub</a></div>
+    <!-- <div class="intro">
+      <p>Hi, I'm Jacqueline - Full Stack Software Engineer</p>
+    </div> -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="portfolio-content">
+        <div class="slider">
+          <div class="item">      
+            <div class="slides">
+              <div id="slide-1">
+                <div class="portfolio-item">
+                  <div class="item-wrap">
+                    <div class="detail-info">
+                      <h3>Yieldly</h3>
+                      <p>The brief for the last project of the Software Engineer Immersive course was to build a full stack app using Django and Python for the back end and React JS for the front end. This was a great collaboration where we both worked on many different features of the application and coding together through bugs and challenges. Big wins for me were implementing Google Login and Recaptcha as well as Stripe Payments.</p>
+                      <div><a href="https://yieldly.herokuapp.com/" rel="noreferrer" target="_blank" ><i class="fas fa-laptop"></i> Deployed project</a></div>
+                      <div><a href="https://github.com/jacquelinedeleeuw/sei-project-four" rel="noreferrer" target="_blank" ><i class="fab fa-github"></i> GitHub</a></div>
+                    </div>
+                    <div class="portfolio-image"><img src="./assets/yieldly.gif" alt="yieldly project" /></div>            
+                  </div>
+                </div>
+              </div>
+              <div id="slide-2">
+                <div class="portfolio-item">
+                  <div class="item-wrap">
+                    <div class="detail-info">
+                      <h3>Jetflix</h3>
+                      <p>The brief for this third project was to build a full-stack app using Express and Mongo for the back end and React JS for the front end. Our idea was to recreate Netflix with holiday destinations instead of movies and an interactive side where users could add pictures of their own holidays similar to Instagram.</p>
+                      <div><a href="https://jetflixapp.herokuapp.com/" rel="noreferrer" target="_blank" ><i class="fas fa-laptop"></i> Deployed project</a></div>
+                      <div><a href="https://github.com/jacquelinedeleeuw/sei-project-three" rel="noreferrer" target="_blank" ><i class="fab fa-github"></i> GitHub</a></div>
+                    </div>
+                    <div class="portfolio-image"><img src="./assets/jetflix.gif" alt="jetflix project" /></div>
+                  </div>
+                </div>
+              </div>
+              <div id="slide-3">
+                <div class="portfolio-item">
+                  <div class="item-wrap">
+                    <div class="detail-info">
+                      <h3>Rijksmuseum</h3>
+                      <p>This was a 48 hour ‘React-athon’ building a full-stack app using a public API. We worked on this project together using live share and built a virtual Rijksmuseum allowing users to explore the collections that are displayed in the museum. The app has different features such as viewing the collections by room, ‘build your own collection’, toggle the language between Dutch and English and a text to speech audio play option.</p>
+                      <div><a href="https://virtual-rijksmuseum.netlify.app/" rel="noreferrer" target="_blank" ><i class="fas fa-laptop"></i> Deployed project</a></div>
+                      <div><a href="https://github.com/jacquelinedeleeuw/sei-project-two" rel="noreferrer" target="_blank" ><i class="fab fa-github"></i> GitHub</a></div>
+                    </div>
+                    <div class="portfolio-image"><img src="./assets/rijksmuseum.gif" alt="rijksmuseum project"/></div>
+                  </div>
+                </div>
+              </div>
+              <div id="slide-4">
+                <div class="portfolio-item">
+                  <div class="item-wrap">
+                    <div class="detail-info">
+                      <h3>Minesweeper</h3>
+                      <p>This was my first project for the Software Engineering Immersive course. The goal was to build a functioning browser game using vanilla JavaScript. I chose to create my own version of Minesweeper, using JavaScript, HTML, CSS as well as Git and GitHub for version control.</p>
+                      <div><a href="https://jacquelinedeleeuw.github.io/sei-project-one/" rel="noreferrer" target="_blank" ><i class="fas fa-laptop"></i> Deployed project</a></div>
+                      <div><a href="https://github.com/jacquelinedeleeuw/sei-project-one" rel="noreferrer" target="_blank" ><i class="fab fa-github"></i> GitHub</a></div>
+                    </div>
+                    <div class="portfolio-image"><img src="./assets/minesweeper.gif" alt="minesweeper project"/></div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="portfolio-image"><img src="./assets/yieldly.jpg" alt="yieldly project" /></div>
           </div>
-          <div class="item-wrap">
-            <div class="detail-info">
-              <h3>Jetflix</h3>
-              <div><a href="https://jetflixapp.herokuapp.com/" rel="noreferrer" target="_blank" >Deployed project</a></div>
-              <div><a href="https://github.com/jacquelinedeleeuw/sei-project-three" rel="noreferrer" target="_blank" >GitHub</a></div>
-            </div>
-            <div class="portfolio-image"><img src="./assets/jetflix.jpg" alt="jetflix project" /></div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-wrap">
-            <div class="detail-info">
-              <h3>Rijksmuseum</h3>
-              <div><a href="https://virtual-rijksmuseum.netlify.app/" rel="noreferrer" target="_blank" >Deployed project</a></div>
-              <div><a href="https://github.com/jacquelinedeleeuw/sei-project-two" rel="noreferrer" target="_blank" >GitHub</a></div>
-            </div>
-            <div class="portfolio-image"><img src="./assets/rijksmuseum.jpg" alt="rijksmuseum project"/></div>
-          </div>
-          <div class="item-wrap">
-            <div class="detail-info">
-              <h3>Minesweeper</h3>
-              <div><a href="https://jacquelinedeleeuw.github.io/sei-project-one/" rel="noreferrer" target="_blank" >Deployed project</a></div>
-              <div><a href="https://github.com/jacquelinedeleeuw/sei-project-one" rel="noreferrer" target="_blank" >GitHub</a></div>
-            </div>
-            <div class="portfolio-image"><img src="./assets/minesweeper.jpg" alt="minesweeper project"/></div>
-          </div>
+            <a href="#slide-1"><i class="fas fa-circle"></i></a>
+            <a href="#slide-2"><i class="fas fa-circle"></i></a>
+            <a href="#slide-3"><i class="fas fa-circle"></i></a>
+            <a href="#slide-4"><i class="fas fa-circle"></i></a>
         </div>
       </div>
     </section>

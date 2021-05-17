@@ -1,10 +1,11 @@
 body {
-  font-family: "Inconsolata", monospace;
-  color: #0d1e2d;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(92, 92, 92);
+  background-color: white;
 }
 
 a {
-  color: rgb(141, 141, 141);
+  color: rgb(92, 92, 92);
   text-decoration: none;
 }
 
@@ -13,55 +14,109 @@ a:hover {
 }
 
 .navbar {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  max-width: 80vw;
-  margin-top: 30px;
-  margin-left: 10vw;
-}
-
-.navbar-about {
-  margin-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 1000px;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 .navbar .navbar-brand,
 .navbar .navbar-about {
   font-size: 1.7rem;
-  padding-left: 20px;
 }
 
-.about-section {
-  padding: 7rem;
+.intro {
+  max-width: 1000px;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.about-section,
+.portfolio-section {
+  padding: 0 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.about-content {
+  max-width: 1000px;
+  width: 80vw;
+  margin: 0 auto;
+  border: 3px solid #dbf0fd;
+  padding: 40px;
+  border-radius: 2%;
 }
 
 .about-columns {
   display: flex;
 }
 
-.about-column {
-  margin-right: 20px;
+.about-column .about-text {
+  font-size: 20px;
+  margin-left: 50px;
+  padding: 10px 30px;
+  background-color: #dbf0fd;
+  color: rgb(92, 92, 92);
 }
 
 .about-column img {
-  margin-top: 16px;
+  display: flex;
+  margin-top: 50px;
+  max-width: 300px;
+  border-radius: 100%;
+  border: 10px solid #dbf0fd;
+}
+
+.about-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35%;
+  font-size: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills p {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.skills i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .item {
   border: none;
-  margin-left: 10vw;
-  max-width: 80vw;
+  max-width: 1000px;
+  width: 80vw;
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
 }
 
 .item .item-wrap {
   display: block;
   position: relative;
   overflow: hidden;
-  max-width: 40vw;
-  max-height: 80vh;
+  max-width: 1000px;
+  width: 80vw;
+  max-height: auto;
   margin: 20px;
   border-radius: 2%;
   border: 1px solid rgb(231, 230, 230);
@@ -75,7 +130,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.8);
   visibility: hidden;
   opacity: 0;
   transition: 0.3s all ease-in-out;
@@ -87,14 +142,15 @@ a:hover {
 }
 
 .portfolio-image img {
-  max-width: 40vw;
+  max-width: 1000px;
+  width: 80vw;
   object-fit: contain;
 }
 
 .item .item-wrap > .detail-info {
   position: absolute;
   top: 50%;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   z-index: 3;
   transform: translateY(-50%);
@@ -106,8 +162,9 @@ a:hover {
 }
 
 .item .item-wrap > .detail-info h3 {
-  font-size: 40px;
+  font-size: 50px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .item .item-wrap > .detail-info a {
@@ -115,6 +172,12 @@ a:hover {
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+}
+
+.item .item-wrap > .detail-info p {
+  padding-left: 100px;
+  padding-right: 100px;
+  font-size: 18px;
 }
 
 .item .item-wrap:hover {
@@ -134,4 +197,127 @@ a:hover {
   margin-top: 0px;
   opacity: 1;
   visibility: visible;
+}
+
+.slider {
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  margin-right: 50px;
+  transform-origin: center center;
+  transform: scale(0.95);
+  transition: transform 0.5s;
+}
+.slides > div:target {
+  transform: scale(0.99);
+  transform-origin: center center;
+}
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  color: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+}
+.slider > a:hover {
+  color: gray;
+}
+@media screen and (max-width: 800px) {
+  .about-contact {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+  }
+  .about-section,
+  .portfolio-section {
+    min-height: 0;
+  }
+  .about-content,
+  .portfolio-content {
+    max-width: 90vw;
+    padding: 5vw;
+    margin: 0 auto;
+    border-radius: 0%;
+  }
+  .portfolio-content {
+    border: none;
+  }
+  .about-column img {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .about-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-column .about-text {
+    margin-left: 0;
+  }
+  .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skills i {
+    margin: 10px;
+    min-width: 80px;
+  }
+  .item .item-wrap {
+    margin: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar .navbar-brand,
+  .navbar .navbar-about {
+    font-size: 1.3rem;
+  }
+  .intro p {
+    font-size: 80%;
+  }
+  .item .item-wrap > .detail-info h3 {
+    font-size: 100%;
+    margin: 0;
+  }
+  .item .item-wrap > .detail-info a {
+    font-size: 50%;
+    margin: 0;
+  }
+  .item .item-wrap > .detail-info p {
+    font-size: 65%;
+    padding: 10px;
+    margin: 0;
+  }
+  .about-column .about-text {
+    margin-left: 0;
+    font-size: 85%;
+  }
 }
