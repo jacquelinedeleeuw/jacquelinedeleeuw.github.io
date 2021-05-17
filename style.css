@@ -318,6 +318,7 @@ a:hover {
   .item .item-wrap > .detail-info p {
     font-size: 65%;
     margin: 0;
+    padding: 2px;
   }
   .about-column .about-text {
     margin-left: 0;
